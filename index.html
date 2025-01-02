@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks Menu</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruleta de Karaoke</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main-container">
-        <div class="logo-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Starbucks_Corporation_Logo_2011.svg" alt="Starbucks Logo" class="logo">
-        </div>
-        <div class="menu-container">
-            <div class="menu-item" onclick="showPage('pedidos')">📋 Pedidos</div>
-            <div class="menu-item" onclick="showPage('sucursales')">📍 Sucursales</div>
-            <div class="menu-item" onclick="showPage('articulos')">🛒 Artículos</div>
-            <div class="menu-item" onclick="showPage('clientes')">👥 Clientes</div>
-        </div>
+  <div class="container">
+    <h1>🎤 Ruleta de Karaoke 🎶</h1>
+    <div class="wheel">
+      <div class="wheel-inner">
+        <div class="segment">🎵 1</div>
+        <div class="segment">🎵 2</div>
+        <div class="segment">🎵 3</div>
+        <div class="segment">🎵 4</div>
+        <div class="segment">🎵 5</div>
+        <div class="segment">🎵 6</div>
+      </div>
     </div>
-    <div id="content">
-        <!-- Content will be loaded here -->
+    <button id="spinButton">Girar</button>
+    <div id="result"></div>
+    <div class="video-container">
+      <iframe id="youtubePlayer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
     </div>
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
